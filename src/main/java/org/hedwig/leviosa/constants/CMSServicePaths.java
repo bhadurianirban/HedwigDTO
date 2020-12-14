@@ -3,14 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.hedwig.cms.constants;
+package org.hedwig.leviosa.constants;
 
 /**
  *
  * @author bhaduri
  */
 public class CMSServicePaths {
-    public static final String LEVIOSA_BASE_URL = "http://localhost:8080/LeviosaCoreService/rest";
+    public static final String LEVIOSA_SERVER = "localhost";
+    public static final String LEVIOSA_PORT = "8080";
+    public static final String LEVIOSA_BASE_URL = "LeviosaCoreService/rest";
+    public static  String CONN_URL;
     public static final String TERM_BASE = "term";
     public static final String GET_TERM_DETAILS = "termdetails";
     public static final String GET_ROOT_TERM_LIST = "roottermlist";

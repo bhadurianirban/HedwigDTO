@@ -15,6 +15,8 @@ public class HedwigAuthCredentials {
     private int roleId;
     private int tenantId;
     private int productId;
+    private String hedwigServer;
+    private String hedwigServerPort;
 
     public String getUserId() {
         return userId;
@@ -54,6 +56,22 @@ public class HedwigAuthCredentials {
 
     public void setRoleId(int roleId) {
         this.roleId = roleId;
+    }
+
+    public String getHedwigServer() {
+        return hedwigServer;
+    }
+
+    public void setHedwigServer(String hedwigServer) {
+        this.hedwigServer = hedwigServer;
+    }
+
+    public String getHedwigServerPort() {
+        return hedwigServerPort;
+    }
+
+    public void setHedwigServerPort(String hedwigServerPort) {
+        this.hedwigServerPort = hedwigServerPort;
     }
     
 }

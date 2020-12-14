@@ -12,16 +12,16 @@ import org.hedwig.cloud.dto.HedwigAuthCredentials;
  * @author dgrfi
  */
 public class CMSDTO {
-    private HedwigAuthCredentials authCredentials;
+    private HedwigAuthCredentials hedwigAuthCredentials;
     private int responseCode;
     private String responseMessage;
 
-    public HedwigAuthCredentials getAuthCredentials() {
-        return authCredentials;
+    public HedwigAuthCredentials getHedwigAuthCredentials() {
+        return hedwigAuthCredentials;
     }
 
-    public void setAuthCredentials(HedwigAuthCredentials authCredentials) {
-        this.authCredentials = authCredentials;
+    public void setHedwigAuthCredentials(HedwigAuthCredentials hedwigAuthCredentials) {
+        this.hedwigAuthCredentials = hedwigAuthCredentials;
     }
 
     public int getResponseCode() {

@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * @author dgrf-vi
  */
-@XmlRootElement
+
 public class UserAuthDTO implements Serializable {
     private String userId;
     private String password;
@@ -27,7 +27,9 @@ public class UserAuthDTO implements Serializable {
     private String dbAdminUser;
     private String dbAdminPassword;
     private String dbConnUrl;
-    @XmlElement  
+    private String hedwigServer;
+    private String hedwigServerPort;
+
     public String getUserId() {
         return userId;
     }
@@ -35,7 +37,7 @@ public class UserAuthDTO implements Serializable {
     public void setUserId(String userId) {
         this.userId = userId;
     }
-    @XmlElement  
+
     public String getPassword() {
         return password;
     }
@@ -43,7 +45,7 @@ public class UserAuthDTO implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-    @XmlElement  
+
     public int getTenantId() {
         return tenantId;
     }
@@ -51,7 +53,7 @@ public class UserAuthDTO implements Serializable {
     public void setTenantId(int tenantId) {
         this.tenantId = tenantId;
     }
-    @XmlElement  
+
     public int getProductId() {
         return productId;
     }
@@ -59,7 +61,7 @@ public class UserAuthDTO implements Serializable {
     public void setProductId(int productId) {
         this.productId = productId;
     }
-    @XmlElement 
+
     public int getResponseCode() {
         return responseCode;
     }
@@ -67,7 +69,7 @@ public class UserAuthDTO implements Serializable {
     public void setResponseCode(int responseCode) {
         this.responseCode = responseCode;
     }
-    @XmlElement 
+
     public String getResponseMessage() {
         return responseMessage;
     }
@@ -76,7 +78,6 @@ public class UserAuthDTO implements Serializable {
         this.responseMessage = responseMessage;
     }
 
-    @XmlElement 
     public int getRoleId() {
         return roleId;
     }
@@ -84,7 +85,7 @@ public class UserAuthDTO implements Serializable {
     public void setRoleId(int roleId) {
         this.roleId = roleId;
     }
-    @XmlElement 
+
     public String getRoleName() {
         return roleName;
     }
@@ -92,7 +93,7 @@ public class UserAuthDTO implements Serializable {
     public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
-    @XmlElement 
+
     public String getName() {
         return name;
     }
@@ -100,7 +101,7 @@ public class UserAuthDTO implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
-    @XmlElement 
+
     public String getDbAdminUser() {
         return dbAdminUser;
     }
@@ -108,7 +109,7 @@ public class UserAuthDTO implements Serializable {
     public void setDbAdminUser(String dbAdminUser) {
         this.dbAdminUser = dbAdminUser;
     }
-    @XmlElement 
+
     public String getDbAdminPassword() {
         return dbAdminPassword;
     }
@@ -116,7 +117,7 @@ public class UserAuthDTO implements Serializable {
     public void setDbAdminPassword(String dbAdminPassword) {
         this.dbAdminPassword = dbAdminPassword;
     }
-    @XmlElement 
+
     public String getDbConnUrl() {
         return dbConnUrl;
     }
@@ -124,6 +125,22 @@ public class UserAuthDTO implements Serializable {
     public void setDbConnUrl(String dbConnUrl) {
         this.dbConnUrl = dbConnUrl;
     }
+
+    public String getHedwigServer() {
+        return hedwigServer;
+    }
+
+    public void setHedwigServer(String hedwigServer) {
+        this.hedwigServer = hedwigServer;
+    }
+
+    public String getHedwigServerPort() {
+        return hedwigServerPort;
+    }
+
+    public void setHedwigServerPort(String hedwigServerPort) {
+        this.hedwigServerPort = hedwigServerPort;
+    }
     
-    
+        
 }
